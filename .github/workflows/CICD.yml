@@ -62,6 +62,10 @@ jobs:
           chmod +x generate_changelog.sh
           ./generate_changelog.sh
 
+      - name: Create docs directory if not exists
+        run: |
+          mkdir -p docs
+
       - name: Save Changelog
         run: |
           mv changelog.md docs/changelog.md
