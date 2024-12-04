@@ -27,7 +27,7 @@ jobs:
       - name: Run Unit Tests
         run: pytest
 
-  # Job: Security Check with Bandit
+  # Job: Security Check with 
   security:
     runs-on: ubuntu-latest
     steps:
