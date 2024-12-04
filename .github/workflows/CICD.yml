@@ -64,7 +64,7 @@ jobs:
 
       - name: Save Changelog
         run: |
-          mv changelog.md docs/changelog.md
+          mv changelog.md changelog.md
 
   # Job: Deploy to GitHub Pages
   deploy:
