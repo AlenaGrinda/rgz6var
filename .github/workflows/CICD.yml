@@ -64,7 +64,7 @@ jobs:
 
       - name: Save Changelog
         run: |
-          mv changelog.md changelog.md
+          mv changelog.md docs/changelog.md
 
   # Job: Deploy to GitHub Pages
   deploy:
@@ -78,3 +78,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
